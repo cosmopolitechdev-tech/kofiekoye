@@ -648,6 +648,24 @@
         color: var(--ink);
       }
 
+      .video-embed {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 6px;
+        overflow: hidden;
+        border: 1px solid var(--card-line);
+        background: var(--card);
+      }
+      .video-embed iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
       /* FAQ */
       .faq {
         border-top: 1px solid var(--line);
@@ -837,6 +855,7 @@
           <a href="#features">Features</a>
           <a href="#how" class="hide-sm">How it works</a>
           <a href="#subjects">Subjects</a>
+          <a href="#video-demo" class="hide-sm">Demo</a>
           <a href="#faq" class="hide-sm">FAQs</a>
           <a class="pill" href="#download">Download</a>
         </div>
@@ -1097,6 +1116,26 @@
             </div>
             <figcaption><b>Lesson Plans</b> &mdash; a one-page plan for every period of the term.</figcaption>
           </figure>
+        </div>
+      </div>
+
+      <hr class="rule" />
+
+      <!-- 04b Demo video -->
+      <div class="section reveal" id="video-demo">
+        <div class="section-label"><span class="num">04b</span><span class="eyebrow">Watch the demo</span></div>
+        <p class="intro">
+          Watch Kofiekoye compute a Year Plan and generate a full Scheme of Learning and Lesson Plans, start to
+          finish.
+        </p>
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="Kofiekoye demo video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
 
