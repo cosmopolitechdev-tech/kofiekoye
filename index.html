@@ -90,13 +90,13 @@
         border-bottom: 1px solid var(--board-line);
       }
       .nav-inner {
-        max-width: 920px;
+        max-width: 1120px;
         margin: 0 auto;
         padding: 12px 24px 12px 12px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 12px;
       }
       .brand {
@@ -137,7 +137,9 @@
         display: flex;
         align-items: center;
         gap: 22px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        flex-shrink: 0;
       }
       .nav-links a {
         font-size: 0.9rem;
@@ -193,6 +195,15 @@
         }
         .nav-links .hide-sm {
           display: none;
+        }
+      }
+      @media (max-width: 420px) {
+        .brand .brand-tag {
+          display: none;
+        }
+        .brand img {
+          width: 34px;
+          height: 34px;
         }
       }
 
@@ -691,6 +702,17 @@
       .info-card li {
         margin-bottom: 6px;
       }
+      .info-card a:not(.link-btn),
+      .feat a,
+      .step a {
+        color: var(--gold);
+        font-weight: 600;
+      }
+      .info-card a:not(.link-btn):hover,
+      .feat a:hover,
+      .step a:hover {
+        color: #f0631d;
+      }
       .link-btn {
         display: inline-block;
         margin-top: 10px;
@@ -795,7 +817,6 @@
     <div class="nav">
       <div class="nav-inner">
         <a class="brand" href="index.html">
-          <!-- Replace with the app logo (for example the "SD" monogram exported as PNG). -->
           <img src="./images/kofiekoye-logo.png" alt="Kofiekoye logo" onerror="this.style.display='none'" />
           <span class="brand-text"><span class="brand-name">Kofiekoye</span><span class="brand-tag">Homework for the homework giver</span></span>
         </a>
