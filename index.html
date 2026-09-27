@@ -625,7 +625,8 @@
         overflow: hidden;
         position: relative;
       }
-      .shot .frame img {
+      .shot .frame img,
+      .shot .frame video {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -1062,29 +1063,37 @@
         <div class="shots">
           <figure class="shot">
             <div class="frame">
-              <img src="./images/term-autopilot.gif" alt="Automatic Year Plan computing a year plan" loading="lazy"
-                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'placeholder',textContent:'GIF coming soon: Automatic Year Plan'}))" />
+              <video autoplay muted loop playsinline poster="./images/automatic_year_plan.jpg" aria-label="Automatic Year Plan computing a year plan">
+                <source src="./images/automatic_year_plan.mp4" type="video/mp4" />
+                Automatic Year Plan computing a year plan
+              </video>
             </div>
             <figcaption><b>Automatic Year Plan</b> &mdash; weeks per term, lessons per week, Compute Year Plan.</figcaption>
           </figure>
           <figure class="shot">
             <div class="frame">
-              <img src="./images/timetable.gif" alt="Setting the weekly timetable" loading="lazy"
-                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'placeholder',textContent:'GIF coming soon: Weekly timetable'}))" />
+              <video autoplay muted loop playsinline poster="./images/weekly_timetable.jpg" aria-label="Setting the weekly timetable">
+                <source src="./images/weekly_timetable.mp4" type="video/mp4" />
+                Setting the weekly timetable
+              </video>
             </div>
             <figcaption><b>Weekly timetable</b> &mdash; set your days, periods and times once.</figcaption>
           </figure>
           <figure class="shot">
             <div class="frame">
-              <img src="./images/scheme-of-learning.gif" alt="Generating a Scheme of Learning" loading="lazy"
-                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'placeholder',textContent:'GIF coming soon: Scheme of Learning'}))" />
+              <video autoplay muted loop playsinline poster="./images/scheme_of_learning.jpg" aria-label="Generating a Scheme of Learning">
+                <source src="./images/scheme_of_learning.mp4" type="video/mp4" />
+                Generating a Scheme of Learning
+              </video>
             </div>
             <figcaption><b>Scheme of Learning</b> &mdash; termly and annual schemes in Word and PDF.</figcaption>
           </figure>
           <figure class="shot">
             <div class="frame">
-              <img src="./images/lesson-plan.gif" alt="Generating one-page lesson plans" loading="lazy"
-                onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'placeholder',textContent:'GIF coming soon: Lesson Plans'}))" />
+              <video autoplay muted loop playsinline poster="./images/leson_plans.jpg" aria-label="Generating one-page lesson plans">
+                <source src="./images/leson_plans.mp4" type="video/mp4" />
+                Generating one-page lesson plans
+              </video>
             </div>
             <figcaption><b>Lesson Plans</b> &mdash; a one-page plan for every period of the term.</figcaption>
           </figure>
