@@ -291,29 +291,24 @@
           box-shadow: 0 6px 20px rgba(228, 183, 92, 0.55);
         }
       }
-      /* Narrow screens: the rotated corner ribbon covered the page title, so it becomes a
-         flat badge row sitting above the title instead. */
-      @media (max-width: 1000px) {
+      @media (max-width: 640px) {
         .corner-badge {
-          position: relative;
-          top: auto;
-          left: auto;
-          transform: none;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 2px 14px;
-          width: fit-content;
-          max-width: calc(100% - 32px);
-          margin: 0 auto 22px;
-          padding: 6px 16px;
-          font-size: 0.8rem;
-          line-height: 1.4;
-          opacity: 1;
-          animation: badgeGlow 2.6s ease-in-out infinite 1s;
+          font-size: 0.72rem;
+          padding: 8px 20px 8px 14px;
+          top: 16px;
+          left: -10px;
         }
-        .corner-badge span {
-          display: inline;
+      }
+      /* The corner ribbon keeps its place; on narrower screens the title starts below it
+         so the ribbon never covers the app name. */
+      @media (max-width: 1000px) {
+        .hero .hero-inner {
+          padding-top: var(--ribbon-clearance, 115px);
+        }
+      }
+      @media (max-width: 640px) {
+        .hero .hero-inner {
+          --ribbon-clearance: 85px;
         }
       }
       .hero-inner {
