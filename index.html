@@ -759,6 +759,31 @@
         background: var(--stamp);
         color: #fff;
       }
+      .qr-card {
+        text-align: center;
+      }
+      .qr-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        margin-top: 6px;
+      }
+      .qr-wrap img {
+        background: #fff;
+        padding: 10px;
+        border-radius: 6px;
+        width: 200px;
+        height: 200px;
+        display: block;
+      }
+      .qr-wrap .qr-caption {
+        max-width: 42ch;
+      }
+      .qr-wrap .qr-number {
+        color: var(--card-ink);
+        font-weight: 700;
+      }
       .cta-card {
         background: var(--board);
         color: var(--board-ink);
@@ -1201,6 +1226,26 @@
             Kofiekoye works offline for everyday use. Your account, plans and generated documents are stored on
             your own computer; nothing is uploaded or shared.
           </p>
+        </div>
+        <div class="info-card qr-card">
+          <h2>Scan to chat on WhatsApp</h2>
+          <div class="qr-wrap">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=8&data=https%3A%2F%2Fwa.me%2F233205334596"
+              width="200"
+              height="200"
+              loading="lazy"
+              alt="QR code that opens a WhatsApp chat with CosmopoliTech Solutions on 0205334596"
+            />
+            <p class="qr-caption">
+              Point your phone's camera at this code to open a WhatsApp chat with
+              <span class="qr-number">0205334596</span> &mdash; for licences, adding subjects or moving to a new
+              computer.
+            </p>
+            <a class="link-btn" href="https://wa.me/233205334596" target="_blank" rel="noopener"
+              >&#128172; Or tap here to open WhatsApp</a
+            >
+          </div>
         </div>
       </div>
 
