@@ -308,7 +308,10 @@
       }
       @media (max-width: 640px) {
         .hero .hero-inner {
-          --ribbon-clearance: 56px;
+          --ribbon-clearance: 46px;
+        }
+        .hero .app-fullname {
+          margin-top: 0;
         }
       }
       .hero-inner {
@@ -344,14 +347,14 @@
         opacity: 0;
         animation: riseIn 0.7s ease forwards 0.25s;
       }
-      .hero .lede {
+      /* .hero .lede {
         font-size: 1.12rem;
         color: #dcd6c2;
         max-width: 66ch;
         margin: 0 auto;
         opacity: 0;
         animation: riseIn 0.7s ease forwards 0.4s;
-      }
+      } */
       .hero .tagline {
         font-family: "Fraunces", serif;
         font-style: italic;
@@ -901,22 +904,6 @@
 
         <h1>A full term of Schemes of Learning and Lesson Plans, ready in minutes.</h1>
 
-        <p class="lede">
-          Kofiekoye is a Windows desktop application for Junior High School teachers in Ghana that generates
-          Schemes of Learning and Lesson Plans automatically &mdash; weekly or termly. Pick your subject, class and
-          term, set your weekly periods and lesson delivery times once, and it builds your weekly or termly and
-          annual Scheme of Learning in a one-page (or multi-page) Lesson Plan (word or pdf). You can also
-          flexibly customize each scheme or lesson plan to suit your own classroom &mdash; editing the lesson
-          starter, main activities, resources and Performance Indicator &mdash; all aligned to the NaCCA Common Core
-          Programme curriculum and Teacher's Resource Pack, and exported as editable Word documents and print-ready
-          PDFs.
-        </p>
-
-        <p class="tagline">
-          &ldquo;Kofiekoye &mdash; Homework for the homework giver &mdash; your Scheme of Learning and Lesson Plans, ready before
-          the SISO checks.&rdquo;
-        </p>
-
         <div class="download-group">
           <!-- The installer is attached to the latest GitHub Release of this repository. -->
           <a
@@ -927,6 +914,11 @@
             ><span class="dl-sub">Version 1.0.0 (JHS, Basic 7&ndash;9) &middot; Windows 10/11 64-bit &middot; 29 MB</span></a
           >
         </div>
+
+        <p class="tagline">
+          &ldquo;Kofiekoye &mdash; Homework for the homework giver &mdash; your Scheme of Learning and Lesson Plans, ready before
+          the SISO checks.&rdquo;
+        </p>
 
         <div class="download-group" style="margin-top: 14px">
           <a class="btn btn-demo" href="https://wa.me/233205334596" target="_blank" rel="noopener"
@@ -943,7 +935,26 @@
 
     <div class="wrap">
       <!-- 01 What it does -->
-      <div class="section reveal" id="features" style="padding-top: 50px">
+      <!-- 00 About -->
+      <div class="section reveal" id="about" style="padding-top: 50px">
+        <div class="section-label"><span class="num">00</span><span class="eyebrow">About</span></div>
+
+        <p class="intro">
+          Kofiekoye is a Windows desktop application for Junior High School teachers in Ghana that generates
+          Schemes of Learning and Lesson Plans automatically &mdash; weekly or termly. Pick your subject, class and
+          term, set your weekly periods and lesson delivery times once, and it builds your weekly or termly and
+          annual Scheme of Learning in a one-page (or multi-page) Lesson Plan (word or pdf). You can also
+          flexibly customize each scheme or lesson plan to suit your own classroom &mdash; editing the lesson
+          starter, main activities, resources and Performance Indicator &mdash; all aligned to the NaCCA Common Core
+          Programme curriculum and Teacher's Resource Pack, and exported as editable Word documents and print-ready
+          PDFs.
+        </p>
+      </div>
+
+      <hr class="rule" />
+
+      <!-- 01 What it does -->
+      <div class="section reveal" id="features">
         <div class="section-label"><span class="num">01</span><span class="eyebrow">What it does</span></div>
 
         <div class="grid">
