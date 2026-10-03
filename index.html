@@ -8,7 +8,7 @@
       name="description"
       content="Kofiekoye (The Solution to homework for the homework giver) is a Windows desktop app that generates NaCCA-aligned Schemes of Learning and one-page Lesson Plans (Word and PDF) for Basic 7–9 teachers in Ghana."
     />
-    <link rel="icon" type="image/png" href="./images/kofiekoye-logo.png" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -112,11 +112,15 @@
         text-decoration: none;
       }
       .brand img {
-        width: 44px;
-        height: 44px;
+        width: 52px;
+        height: 52px;
         object-fit: contain;
         display: block;
         flex-shrink: 0;
+        /* The logo is drawn for a white page, so it sits on its own white tile in the dark bar. */
+        background: #fff;
+        border-radius: 8px;
+        padding: 2px;
       }
       .brand:hover {
         color: #fff;
@@ -217,8 +221,8 @@
           display: none;
         }
         .brand img {
-          width: 34px;
-          height: 34px;
+          width: 40px;
+          height: 40px;
         }
       }
 
@@ -930,10 +934,10 @@
           <!-- The installer is attached to the latest GitHub Release of this repository. -->
           <a
             class="dl-btn"
-            href="https://github.com/cosmopolitechdev-tech/kofiekoye/releases/latest/download/KofiekoyeSetup_JHS_1.0.0.exe"
+            href="https://github.com/cosmopolitechdev-tech/kofiekoye/releases/latest/download/KofiekoyeSetup_JHS_1.0.1.exe"
             download
             ><span class="dl-edition">&#11015; Download Kofiekoye</span
-            ><span class="dl-sub">Version 1.0.0 (JHS, Basic 7&ndash;9) &middot; Windows 10/11 64-bit &middot; 29 MB</span></a
+            ><span class="dl-sub">Version 1.0.1 (JHS, Basic 7&ndash;9) &middot; Windows 10/11 64-bit &middot; 30 MB</span></a
           >
         </div>
 
@@ -1379,7 +1383,7 @@
           </div>
           <a
             class="dl-btn"
-            href="https://github.com/cosmopolitechdev-tech/kofiekoye/releases/latest/download/KofiekoyeSetup_JHS_1.0.0.exe"
+            href="https://github.com/cosmopolitechdev-tech/kofiekoye/releases/latest/download/KofiekoyeSetup_JHS_1.0.1.exe"
             download
             ><span class="dl-edition">&#11015; Download</span><span class="dl-sub">Windows installer</span></a
           >
